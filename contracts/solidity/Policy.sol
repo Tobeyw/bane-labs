@@ -34,5 +34,10 @@ contract Policy is GovernanceVote{
         }
            
     }
+
+    // get blacklist
+    function getBlackList() public view returns (address[] memory){  
+        return blackList.values();
+    }
  
 }
